@@ -5,14 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "fastapi>=0.115.12",
+    "fastapi==0.104.1",
     "ftfy>=6.3.1",
     "regex>=2024.11.6",
     "torch>=2.7.1",
     "torchvision>=0.22.1",
     "tqdm>=4.67.1",
     "uvicorn>=0.34.3",
+    "chromadb==0.4.18",
 ]
 
 [project.scripts]
-api = "main:main"
+api = "python run main.py"
